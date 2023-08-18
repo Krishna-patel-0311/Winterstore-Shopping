@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* additions here*/
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    
+  }
+  code  {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background-color: #f0f0f0;
+}
+
+.content {
+  overflow-y: scroll;
+}
+/* Align some menu items to the bottom */
+.bottom-side {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Add some space above the bottom menu items */
+.sidebar .pro-sidebar-layout .pro-sidebar-content .pro-menu .pro-menu-item-bottom:not(:last-child) {
+  margin-bottom: 16px;
+}
